@@ -11,5 +11,20 @@ int main()
 		i++;
 	}
 	printf("factorial of %d is: %d",n,fact);
+  
+	int a,b,n,c;
+	a=0;
+	b=1;
+	printf("Enter the Number upto where you want to find fabonacci series :");
+    scanf("%d", &n);
+    printf("The fabonacci Series is :");
+	while(n>=0){
+		c=a+b;
+		a=b;
+		b=c;
+		printf("\n%d",c);
+		n--;
+	}	
+	printf("Fabonacci series upto %d terms :\n",n);
 	return 0;
 }
