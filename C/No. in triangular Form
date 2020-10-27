@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,x,y,c=1;
+    
+    for (i=1;i<=4;i++)
+    {
+    	for (x=1;x<=4-i;x++)
+    	{
+    		printf("  ");
+		}
+		
+		for (y=1;y<=i;y++)
+		{
+			printf("%d   ",c);
+			c++;
+		}
+		printf("\n");
+	
+	}
+    
+    return 0;
+}
+
