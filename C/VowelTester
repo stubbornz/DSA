@@ -1,0 +1,35 @@
+#include<stdio.h>
+ 
+int main() 
+{ 
+    char alpha;
+    printf("Enter the Letter you want to check : ");
+    scanf("%c", &alpha);
+ 
+  switch(alpha)
+  {
+    case 'a':
+    case 'A':
+    case 'e':
+    case 'E':
+    case 'i':
+    case 'I':
+    case 'o':
+    case 'O':
+    case 'u':
+    case 'U':
+      printf("%c is a vowel.\n", alpha);
+      break;
+    default:
+      printf("%c is not a vowel.\n", alpha);
+  }              
+ 
+  
+    return 0;
+    
+} 
+
+
+
+
+
