@@ -12,10 +12,10 @@ void insertionSort(int array[], int n)
 		/* Move elements of arr[0..i-1], that are 
 		greater than key, to one position ahead 
 		of their current position */
-		while (j >= 0 && array[j] > key) 
+		while (j >= 0 && array[j] > key)
 		{ 
 			array[j + 1] = array[j]; 
-			j = j - 1; 
+			j--; 
 		} 
 		array[j + 1] = key; 
 	} 
@@ -26,14 +26,14 @@ int main()
     int size=0;
     cout<<"Enter no. of elements: ";
     cin>>size;
-	int *array = new int[size]; 
+	int array[size]; 
+
     cout<<"Enter elements of array:"<<endl;
 	for(int i=0;i<size;++i) cin>>array[i];
+
 	insertionSort(array, size); 
     cout<<"Sorted array:"<<endl;
 	for(int i=0;i<size;++i) cout<<array[i]<<endl;
 	 
-     return 0; 
+    return 0; 
 } 
-
-
