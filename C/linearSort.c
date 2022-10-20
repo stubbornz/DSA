@@ -14,7 +14,7 @@ for(e=0;e<=size-1;e++)
 scanf("%d",&i);
 array[e]=i;
 }
-linearSort(arary,0,size-1);
+linearSort(array,0,size-1);
 printf("Sorted array:\n");
 for(e=0;e<=size-1;e++) printf("%d\n",array[e]);
 free(array);
